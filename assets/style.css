@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 /* *{
     outline: 1px solid red;
 } */
@@ -204,7 +205,8 @@ a {
         min-width: 460px;
         padding-top: 60px;
     }
-    .intro-left h1{
+
+    .intro-left h1 {
         font-size: 55px;
         font-weight: 400;
     }
@@ -242,27 +244,144 @@ a {
         min-width: 400px;
     }
 }
+
 /*introdaction bitis yeri*/
 /* trusted-by section basliq */
 
-    .trusted-by-section{
-    
-    }
-    .trusted-by-section h5{
-        text-align: center;
-        font-size: 15px;
-        padding-top: 30px;
-        font-weight: 700;
-        color: #FF8A56 ;
-    }
-    .trusted-by-logo{
+/* .marqure{ 
         display: flex;
-        justify-content: space-around;
-        padding-top: 55px;
+    }*/
+
+.trusted-by-section h5 {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 30px;
+    font-weight: 700;
+    color: #FF8A56;
+}
+
+.trusted-by-logo {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 55px;
+}
+
+@media(max-width:823px) {
+    .trusted-by-logos:nth-child(odd) {
+        display: none;
     }
-    @media(max-width:823px){
-        .trusted-by-logos:nth-child(odd) {
-            display: none;
-        }
-    }
+}
+
 /* trusted-by section bitis */
+/* SECTION SERVICES BASLANQIC */
+.section-services {
+    padding: 40px 100px;
+}
+
+.section-services h5 {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.section-services h1 {
+    text-align: center;
+    color: #FF8A56;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    font-weight: 700;
+    font-size: 3.4rem;
+}
+
+.aplication ul {
+    list-style: disc;
+    list-style-position: inside;
+    font-weight: 700;
+}
+
+.aplication ul li {
+    margin-bottom: 15px;
+}
+
+.aplication {
+    width: 300px;
+}
+
+.aplication h6 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.aplication span {
+    font-weight: 300;
+    display: block;
+    margin-bottom: 30px;
+}
+.aplications {
+    display: flex;
+    justify-content: space-between;
+}
+.aplication:hover{
+    background-color: #666666;
+}
+
+@media(max-width:900px) {
+    .section-services {
+        padding: 40px 40px;
+    }
+
+    .section-services>h1 {
+        font-weight: 500;
+        font-size: 50px;
+        align-items: center;
+    }
+}
+
+@media(max-width:706px) {
+    .section-services >h1 {
+        min-width: 400px;
+        font-size: 2.2rem;
+        align-items: center;
+    }
+}
+@media(max-width:521px){
+    .section-services >h1{
+        min-width: 400px;
+        padding: 40px 0px;
+        align-items: center;
+    }
+}
+@media(max-width:1100px){
+    .aplications{
+        text-align: center;
+    }
+    .aplication{
+        margin-bottom: 50px;
+    }
+    .app-1{
+        min-width: 260px;
+    }
+    .app-2{
+        min-width: 260px;
+    }
+    .app-3{
+        display: none;
+    }
+}
+@media (max-width:700px) {
+    .aplications{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .app-3{
+        min-width: 261px; 
+        display: block;
+    }
+}
+/* SECTION SERVICES BITIS */
